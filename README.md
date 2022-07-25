@@ -1,13 +1,19 @@
 
 Venue Booking
 
-A web application to book venue in university. It is specifically designed for JUIT.
+A web application to book venue in university. It is specifically designed for JUIT. It stores the booking database in MongoDB.
 ## Features
 
 - Can add or delete rooms.
 - If anyone else has booked the room between given time, it will show error and booking will not be made.
 
 
+## Requirement
+
+- MongoDB (locally)
+- NodeJS
+
+If you want to use remote MongoDB server, then you need to change the url in the app.js and server.js file. 
 ## Run Locally
 
 Clone the project
