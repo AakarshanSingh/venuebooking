@@ -10,9 +10,9 @@
     "path": "^0.12.7",
     "time-to-seconds": "^1.4.1"
   },
-  "name": "final-project",
+  "name": "venuebooking",
   "version": "1.0.0",
-  "description": "Simple Project For Venue Booking",
+  "description": "Venue Booking",
   "main": "Booking.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
