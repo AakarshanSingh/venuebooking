@@ -1,7 +1,7 @@
 
 ## Venue Booking
 
-A web application to book venue in university. It is specifically designed for JUIT.
+A web application to book venue in university.
 
 ## Features
 
