@@ -46,3 +46,9 @@ Install dependencies
 
 - [@AakarshanSingh](https://github.com/AakarshanSingh)
 
+
+## Screen Shots
+
+![image](https://user-images.githubusercontent.com/95141279/197763430-e4f8a0dc-d845-452d-88e0-1d727c89a707.png)
+
+![image](https://user-images.githubusercontent.com/95141279/197763676-bfb83fb2-b8d4-4ea3-9f55-f6c35489aaf0.png)
