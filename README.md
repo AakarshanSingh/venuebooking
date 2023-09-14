@@ -26,7 +26,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd venuebooking
+  cd portfolio
 ```
 
 Install dependencies
