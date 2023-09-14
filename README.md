@@ -32,7 +32,7 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  npm install bcrypt bcryptjs body-parser connect-mongodb-session express express-session hbs js jsonwebtoken mongoose mysql path time-to-seconds 
+  npm install nodemon bcrypt bcryptjs body-parser connect-mongodb-session express express-session hbs js jsonwebtoken mongoose mysql path time-to-seconds 
 ```
   
   Start the server
