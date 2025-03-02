@@ -1,78 +1,87 @@
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Venue Booking : register</title>
-    <link rel="stylesheet" href="/style/register.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Register | Venue Booking</title>
+    <link rel='stylesheet' href='/styles/pages/auth.css' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
+      href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap'
+      rel='stylesheet'
     />
   </head>
-
   <body>
-    <div class="container">
-      <div class="container1">
-        <div class="leftContainer">
-          <div class="logo">
-            <img id="logo" src="/images/juit-logo.png" alt="Logo" />
+    <div class='auth-page'>
+      <div class='auth-container'>
+        <img src='/images/juit-logo.png' alt='JUIT Logo' class='auth-logo' />
+
+        <div class='auth-card'>
+          <div class='auth-header'>
+            <h1 class='auth-title'>Create Account</h1>
+            <p class='auth-subtitle'>Sign up to get started</p>
           </div>
-          <form method="POST" action="/register" id="form">
-            <div class="EmailInput">
+
+          <form
+            class='auth-form'
+            method='POST'
+            action='/register'
+            id='registerForm'
+          >
+            <div class='auth-input-group'>
               <input
-                id="email"
-                type="email"
-                name="registerEmail"
-                class="register-input email"
-                placeholder="Enter Your Email"
+                type='email'
+                name='registerEmail'
+                placeholder='Email'
+                class='auth-input'
+                id='email'
                 required
-              /><b><script></script></b>
+              />
+              <div class='auth-input-error' id='email-error'></div>
             </div>
 
-            <div class="PasswordInput">
+            <div class='auth-input-group'>
               <input
-                id="password"
-                name="registerPassword"
-                type="password"
-                class="register-input password"
-                placeholder="Enter Your Password"
+                type='password'
+                name='registerPassword'
+                placeholder='Password'
+                class='auth-input'
+                id='password'
                 required
               />
+              <div class='auth-input-error' id='password-error'></div>
             </div>
-            <div class="confirmPassword">
+
+            <div class='auth-input-group'>
               <input
-                id="password"
-                name="confirmPassword"
-                type="password"
-                class="register-input password"
-                placeholder="Confirm your password"
+                type='password'
+                name='confirmPassword'
+                placeholder='Confirm Password'
+                class='auth-input'
+                id='confirmPassword'
                 required
               />
+              <div class='auth-input-error' id='confirmPassword-error'></div>
             </div>
-            <div class="registerButton">
-              <button type="submit" id="registerButton" class="register-input">
-                Create account
-              </button>
-            </div>
+
+            <button type='submit' class='auth-button' id='registerButton'>Sign
+              Up</button>
           </form>
-          {{#if success}}
-            <div class="alert alert-danger" role="alert">{{success}}</div>
-          {{/if}}
         </div>
-      </div>
 
-      <div class="container2">
-        <div class="rightContainer">
-          <div class="juit">Jaypee University Of Information Technology</div>
-          <div class="approval">
-            Approved by UGC under Section 2f of UGC Act
-          </div>
+        <div class='auth-footer'>
+          Already have an account?
+          <a href='/' class='auth-link'>Sign in</a>
         </div>
+
+        {{#if message}}
+          <div class='alert alert-{{message.type}}'>{{message.text}}</div>
+        {{/if}}
       </div>
     </div>
-  </body>
 
+    <script src='/js/validation.js'></script>
+    <script src='/js/toast.js'></script>
+  </body>
 </html>
