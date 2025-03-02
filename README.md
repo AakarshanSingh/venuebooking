@@ -49,6 +49,6 @@ Install dependencies
 
 ## Screen Shots
 
-![image](https://user-images.githubusercontent.com/95141279/197763430-e4f8a0dc-d845-452d-88e0-1d727c89a707.png)
+![image](https://github.com/user-attachments/assets/99129abb-2c00-4f60-8180-7d7499a02673)
 
-![image](https://user-images.githubusercontent.com/95141279/197763676-bfb83fb2-b8d4-4ea3-9f55-f6c35489aaf0.png)
+![image](https://github.com/user-attachments/assets/fc3ce736-b3f2-48be-bbb3-6eebfe8da9ba)
